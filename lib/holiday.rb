@@ -5,14 +5,16 @@ def second_supply_for_fourth_of_july(holiday_hash)
 end
 
 def add_supply_to_winter_holidays(holiday_hash, supply)
- winter_supplies(holiday_supplies) => ["Lights", "Wreath"]
+ holiday_hash[:winter].each do |holiday, supplies|
+    supplies << supply
+    end #do
 end
 
 
 def add_supply_to_memorial_day(holiday_hash, supply)
-  # again, holiday_hash is the same as the ones above
-  # add the second argument to the memorial day array
-
+  holiday_hash[:winter].each do |holiday, supplies|
+    supplies << supply
+    end #do
 end
 
 def add_new_holiday_with_supplies(holiday_hash, season, holiday_name, supply_array)
